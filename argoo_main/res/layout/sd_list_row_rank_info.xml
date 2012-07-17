@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sd_list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    
+    >
+    
+    <TextView 
+        android:id="@+id/sd_rating_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fraser Institute Rating"
+        android:textSize="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="20dip"
+        
+        />
+    <ImageView 
+        android:id="@+id/sd_rating_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+		android:layout_toLeftOf="@+id/sd_rating_number"
+        android:layout_alignBottom="@+id/sd_rating_now"
+        android:layout_marginRight="5dip"
+        />
+    <TextView
+        android:id="@+id/sd_rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.7"
+        android:textSize="10dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dip"
+        android:layout_alignBottom="@+id/sd_rating_now"></TextView>
+        
+       
+ <!-- the second line -->
+     <TextView 
+        android:id="@+id/sd_rank_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000-10 Rank"
+        android:textSize="10dip"
+        android:layout_below="@+id/sd_rating_now"
+ 
+        android:layout_marginTop="15dip"
+        android:layout_alignLeft="@+id/sd_rating_now"
+        
+        />
+    <ImageView 
+        android:id="@+id/sd_rank_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/infoicon"
+		android:layout_toLeftOf="@+id/sd_rank_number"
+		android:layout_alignLeft="@+id/sd_rating_icon"
+        android:layout_alignBottom="@+id/sd_rank_now"
+        android:layout_marginRight="5dip"
+        />
+
+    <TextView
+        android:id="@+id/sd_rank_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sd_rank_now"
+        android:layout_alignLeft="@+id/sd_rating_number"
+        android:text="49/727"
+        android:textSize="10dip" >
+    </TextView>
+    
+    <!--  the 3rd line  -->
+
+
+     <TextView 
+        android:id="@+id/sd_rank_p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank in the most recent five years"
+        android:textSize="10dip"
+        android:layout_below="@+id/sd_rank_now"
+ 
+        android:layout_marginTop="15dip"
+        android:layout_alignLeft="@+id/sd_rating_now"
+        
+        />
+    <ImageView 
+        android:id="@+id/sd_rank_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/infoicon"
+		android:layout_toLeftOf="@+id/sd_rank_number"
+		android:layout_alignLeft="@+id/sd_rating_icon"
+        android:layout_alignBottom="@+id/sd_rank_p5"
+        android:layout_marginRight="5dip"
+        />
+
+    <TextView
+        android:id="@+id/sd_rank_number_p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sd_rank_p5"
+        android:layout_alignLeft="@+id/sd_rating_number"
+        android:text="49/727"
+        android:textSize="10dip" >
+    </TextView>    
+    
+</RelativeLayout>
